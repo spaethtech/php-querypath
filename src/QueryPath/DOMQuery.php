@@ -16,7 +16,7 @@ namespace QueryPath;
 use \QueryPath\CSS\QueryPathEventHandler;
 use \QueryPath;
 use \Masterminds\HTML5;
-
+use Traversable;
 
 /**
  * The DOMQuery object is the primary tool in this library.
@@ -3985,7 +3985,7 @@ class DOMQuery implements \QueryPath\Query, \IteratorAggregate, \Countable {
    * @return Iterable
    *  Returns an iterator.
    */
-  public function getIterator() {
+  public function getIterator(): Traversable {
     $i = new QueryPathIterator($this->matches);
     $i->options = $this->options;
     return $i;
