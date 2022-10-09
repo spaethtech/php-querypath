@@ -41,7 +41,7 @@ namespace QueryPath\CSS;
  *   print_r($simpleSelector);
  * }
  * ?>
- * @endode
+ * @endCode
  *
  *
  * @since QueryPath 3.0.0
@@ -73,7 +73,7 @@ class Selector implements EventHandler, \IteratorAggregate, \Countable {
     return $this->selectors;
   }
 
-  public function count() {
+  public function count(): int {
     return count($this->selectors);
   }
 
