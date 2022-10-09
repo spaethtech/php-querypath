@@ -19,7 +19,8 @@ class QueryPathIterator extends \IteratorIterator {
   public $options = array();
   private $qp = NULL;
 
-  public function current(): mixed {
+  #[\ReturnTypeWillChange]
+  public function current() {
     if (!isset($this->qp)) {
       $this->qp = \QueryPath::with(parent::current(), NULL, $this->options);
     }
