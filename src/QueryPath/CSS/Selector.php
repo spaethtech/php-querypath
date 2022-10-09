@@ -5,6 +5,8 @@
 
 namespace QueryPath\CSS;
 
+use Traversable;
+
 /**
  * A CSS Selector.
  *
@@ -58,7 +60,7 @@ class Selector implements EventHandler, \IteratorAggregate, \Countable {
     $this->selectors[$this->groupIndex][] = $this->currSelector;
   }
 
-  public function getIterator() {
+  public function getIterator(): Traversable {
     return new \ArrayIterator($this->selectors);
   }
 
