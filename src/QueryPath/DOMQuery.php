@@ -97,7 +97,7 @@ class DOMQuery implements \QueryPath\Query, \IteratorAggregate, \Countable {
    * @see qp()
    */
   public function __construct($document = NULL, $string = NULL, $options = array()) {
-    $string = trim($string);
+    $string = trim($string ?? "");
     $this->options = $options + Options::get() + $this->options;
 
     $parser_flags = isset($options['parser_flags']) ? $options['parser_flags'] : self::DEFAULT_PARSER_FLAGS;
