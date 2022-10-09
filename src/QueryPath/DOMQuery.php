@@ -359,12 +359,12 @@ class DOMQuery implements \QueryPath\Query, \IteratorAggregate, \Countable {
    * <?php
    *  count(qp($xml, 'div'));
    * ?>
-   * @endcode
+   * @endCode
    *
    * @return int
    *  The number of matches in the DOMQuery.
    */
-  public function count() {
+  public function count(): int {
     return $this->matches->count();
   }
 
