@@ -1,5 +1,5 @@
 {
-  "name": "spaethtech/querypath",
+  "name": "spaethtech/php-querypath",
   "type": "library",
   "description": "HTML/XML querying (CSS 4 or XPath) and processing (like jQuery)",
   "homepage": "https://github.com/technosophos/querypath",
